@@ -1,0 +1,122 @@
+0000.013 () Opened log file at time: Thu, 07 Nov 2024 13:13:34 +0000 on http://localhost/wp_custom_theme
+0000.016 () UpdraftPlus WordPress backup plugin (https://updraftplus.com): 1.24.7 WP: 6.6.2 PHP: 8.2.18 (apache2handler, Windows NT DESKTOP-VR3IEGG 10.0 build 19045 (Windows 10) AMD64) MySQL: 8.3.0 (max packet size=67108864) WPLANG: en_US Server: Apache/2.4.59 (Win64) PHP/8.2.18 mod_fcgid/2.3.10-dev safe_mode: 0 max_execution_time: 900 memory_limit: 256M (used: 4.9M | 6M) multisite: N openssl: OpenSSL 3.0.13 30 Jan 2024 mcrypt: N LANG:  ZipArchive::addFile: Y
+0000.017 () Free space on disk containing Updraft's temporary directory: 165591.7 MB
+0000.119 () Restore setup, now closing connection and starting restore over AJAX.
+0000.010 () Opened log file at time: Thu, 07 Nov 2024 13:13:34 +0000 on http://localhost/wp_custom_theme
+0000.012 () UpdraftPlus WordPress backup plugin (https://updraftplus.com): 1.24.7 WP: 6.6.2 PHP: 8.2.18 (apache2handler, Windows NT DESKTOP-VR3IEGG 10.0 build 19045 (Windows 10) AMD64) MySQL: 8.3.0 (max packet size=67108864) WPLANG: en_US Server: Apache/2.4.59 (Win64) PHP/8.2.18 mod_fcgid/2.3.10-dev safe_mode: 0 max_execution_time: 900 memory_limit: 256M (used: 3.5M | 4M) multisite: N openssl: OpenSSL 3.0.13 30 Jan 2024 mcrypt: N LANG:  ZipArchive::addFile: Y
+0000.013 () Free space on disk containing Updraft's temporary directory: 165590.8 MB
+0000.016 () Ensuring WP_Filesystem is setup for a restore
+0000.023 () WP_Filesystem is setup and ready for a restore
+0000.040 () Restore job started. Entities to restore: plugins, themes, uploads, others, db. Restore options: {"include_unspecified_tables":false,"tables_to_restore":["wp_options","wp_users","wp_usermeta","wp_commentmeta","wp_comments","wp_links","wp_postmeta","wp_posts","wp_term_relationships","wp_term_taxonomy","wp_termmeta","wp_terms"],"tables_to_skip":[],"updraft_encryptionphrase":"","updraft_restorer_wpcore_includewpconfig":false,"updraft_incremental_restore_point":-1}
+0000.052 () PHP event: code E_WARNING: mkdir(): File exists (line 558, C:\wamp64\www\wp_custom_theme\wp-admin\includes\class-wp-filesystem-direct.php)
+0000.086 () Will not delete any archives after unpacking them, because there was no cloud storage for this backup
+0000.089 () Entity: db
+0000.089 () restore_backup(backup_file=backup_2024-11-06-0917_Test_Site_cb17736087e3-db.gz, type=db, info=a:0:{}, last_one=)
+0000.091 () Unpacking backup... (backup_2024-11-06-0917_Test_Site_cb17736087e3-db.gz, 0.2 Mb)
+0000.092 () PHP event: code E_WARNING: mkdir(): File exists (line 558, C:\wamp64\www\wp_custom_theme\wp-admin\includes\class-wp-filesystem-direct.php)
+0000.097 () Database successfully unpacked
+0000.099 () Restoring the database (on a large site this can take a long time - if it times out (which can happen if your web hosting company has configured your hosting to limit resources) then you should use a different method, such as phpMyAdmin)...
+0000.114 () Using direct MySQL access; value of use_mysqli is: 1
+0000.116 () SQL compatibility mode is: NO_AUTO_VALUE_ON_ZERO,
+0000.206 () Max packet size: 64 MB
+0000.206 () Entering maintenance mode
+0000.206 () Enabling Maintenance mode&#8230;
+0000.277 () Backup of: http://localhost/wp_custom_theme
+0000.280 () Content URL: http://localhost/wp_custom_theme/wp-content
+0000.281 () Uploads URL: http://localhost/wp_custom_theme/wp-content/uploads
+0000.281 () Old table prefix: wp_
+0000.281 () UpdraftPlus plugin slug: updraftplus/updraftplus.php
+0000.281 () Site information: multisite=0
+0000.282 () Site information: sql_mode=
+0000.285 () Skipped execution of SQL statement (unwanted or internally handled type=18): /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+0000.286 () New table prefix: vn_
+0000.293 () Processing table (MyISAM): wp_options - will restore as: vn_options
+0000.385 () Atomic restore: dropping original table (wp_options)
+0000.395 () Atomic restore: renaming new table (vn_options) to final table name (wp_options)
+0000.403 () Restoring prior UD configuration (table: wp_options; keys: 4)
+0000.432 () Processing table (MyISAM): wp_users - will restore as: vn_users
+0000.454 () Atomic restore: dropping original table (wp_users)
+0000.463 () Atomic restore: renaming new table (vn_users) to final table name (wp_users)
+0000.475 () Processing table (MyISAM): wp_usermeta - will restore as: vn_usermeta
+0000.501 () Atomic restore: dropping original table (wp_usermeta)
+0000.510 () Atomic restore: renaming new table (vn_usermeta) to final table name (wp_usermeta)
+0000.521 () Processing table (MyISAM): wp_commentmeta - will restore as: vn_commentmeta
+0000.545 () Atomic restore: dropping original table (wp_commentmeta)
+0000.552 () Atomic restore: renaming new table (vn_commentmeta) to final table name (wp_commentmeta)
+0000.565 () Processing table (MyISAM): wp_comments - will restore as: vn_comments
+0000.595 () Atomic restore: dropping original table (wp_comments)
+0000.618 () Atomic restore: renaming new table (vn_comments) to final table name (wp_comments)
+0000.635 () Processing table (MyISAM): wp_links - will restore as: vn_links
+0000.667 () Atomic restore: dropping original table (wp_links)
+0000.681 () Atomic restore: renaming new table (vn_links) to final table name (wp_links)
+0000.702 () Processing table (MyISAM): wp_postmeta - will restore as: vn_postmeta
+0000.743 () Atomic restore: dropping original table (wp_postmeta)
+0000.761 () Atomic restore: renaming new table (vn_postmeta) to final table name (wp_postmeta)
+0000.776 () Processing table (MyISAM): wp_posts - will restore as: vn_posts
+0000.832 () Atomic restore: dropping original table (wp_posts)
+0000.848 () Atomic restore: renaming new table (vn_posts) to final table name (wp_posts)
+0000.868 () Processing table (MyISAM): wp_term_relationships - will restore as: vn_term_relationships
+0000.900 () Atomic restore: dropping original table (wp_term_relationships)
+0000.910 () Atomic restore: renaming new table (vn_term_relationships) to final table name (wp_term_relationships)
+0000.922 () Processing table (MyISAM): wp_term_taxonomy - will restore as: vn_term_taxonomy
+0000.956 () Atomic restore: dropping original table (wp_term_taxonomy)
+0000.970 () Atomic restore: renaming new table (vn_term_taxonomy) to final table name (wp_term_taxonomy)
+0000.984 () Processing table (MyISAM): wp_termmeta - will restore as: vn_termmeta
+0001.012 () Atomic restore: dropping original table (wp_termmeta)
+0001.023 () Atomic restore: renaming new table (vn_termmeta) to final table name (wp_termmeta)
+0001.042 () Processing table (MyISAM): wp_terms - will restore as: vn_terms
+0001.066 () Skipped execution of SQL statement (unwanted or internally handled type=18): /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
+0001.131 () Unlocking database and leaving maintenance mode
+0001.132 () Disabling Maintenance mode&#8230;
+0001.133 () Atomic restore: dropping original table (wp_terms)
+0001.147 () Atomic restore: renaming new table (vn_terms) to final table name (wp_terms)
+0001.162 () Finished: lines processed: 44 in 1.03 seconds
+0001.164 () Cleaning up rubbish...
+0001.167 () Begin search and replace (updraftplus_restored_db)
+0001.167 () [Database-replace-site-url] Database: search and replace site URL
+0001.167 () This option was not selected.
+0001.197 () Entity: plugins
+0001.198 () restore_backup(backup_file=backup_2024-11-06-0917_Test_Site_cb17736087e3-plugins.zip, type=plugins, info=a:3:{s:4:"path";s:48:"C:\wamp64\www\wp_custom_theme/wp-content/plugins";s:11:"description";s:7:"Plugins";s:20:"singular_description";s:6:"Plugin";}, last_one=)
+0001.199 () Unpacking backup... (backup_2024-11-06-0917_Test_Site_cb17736087e3-plugins.zip, 7.4 MB)
+0001.212 () Unzipping backup_2024-11-06-0917_Test_Site_cb17736087e3-plugins.zip to C:/wamp64/www/wp_custom_theme/wp-content/upgrade/14610d12/ using UpdraftPlus_ZipArchive, starting index 0
+0004.532 () Unzip progress: 1002 out of 1535 files (21.9 MB, plugins/updraftplus/vendor/guzzle/guzzle/src/Guzzle/Service/AbstractConfigLoader.php)
+0016.161 () Unzip progress: 1535 out of 1535 files (25.3 MB, plugins/updraftplus/vendor/team-updraft/common-libs/src/updraft-tasks/class-updraft-tasks-activation.php)
+0016.168 () Moving old data: filesystem method / updraft_dir is potentially possible
+0016.169 () Moving old data: can potentially use wp_filesystem method / -old
+0016.169 () Moving old data out of the way...
+0018.518 () Top-level entities being moved: akismet, debug-bar, hello.php, index.php, mv-slider, show-current-template, simple-contact-form, updraftplus
+0018.712 () Moving unpacked backup into place...
+0020.130 () Top-level entities being moved: akismet, debug-bar, hello.php, index.php, mv-slider, show-current-template, simple-contact-form, updraftplus
+0020.161 () PHP event: code E_WARNING: rename(C:/wamp64/www/wp_custom_theme/wp-content/upgrade/14610d12/plugins/updraftplus,C:/wamp64/www/wp_custom_theme/wp-content/plugins/updraftplus): Access is denied (code: 5) (line 4624, C:\wamp64\www\wp_custom_theme\wp-content\plugins\updraftplus\restorer.php)
+0020.161 () [Updraftplus] There was an error when performing the move operation by renaming or copying C:/wamp64/www/wp_custom_theme/wp-content/upgrade/14610d12/plugins/updraftplus to C:/wamp64/www/wp_custom_theme/wp-content/plugins/updraftplus: will attempt a recursive copy instead.
+0023.898 () Cleaning up rubbish...
+0023.905 () Entity: themes
+0023.906 () restore_backup(backup_file=backup_2024-11-06-0917_Test_Site_cb17736087e3-themes.zip, type=themes, info=a:3:{s:4:"path";s:47:"C:\wamp64\www\wp_custom_theme/wp-content/themes";s:11:"description";s:6:"Themes";s:20:"singular_description";s:5:"Theme";}, last_one=)
+0023.908 () Unpacking backup... (backup_2024-11-06-0917_Test_Site_cb17736087e3-themes.zip, 10.8 MB)
+0023.910 () Unzipping backup_2024-11-06-0917_Test_Site_cb17736087e3-themes.zip to C:/wamp64/www/wp_custom_theme/wp-content/upgrade/11054c7d/ using UpdraftPlus_ZipArchive, starting index 0
+0025.668 () Unzip progress: 343 out of 343 files (12.1 MB, themes/wp-devs/style.css)
+0025.676 () Moving old data: filesystem method / updraft_dir is potentially possible
+0025.677 () Moving old data: can potentially use wp_filesystem method / -old
+0025.677 () Moving old data out of the way...
+0025.879 () Top-level entities being moved: index.php, twentytwentyfour, twentytwentythree, twentytwentytwo, wp-devs
+0025.897 () Moving unpacked backup into place...
+0026.177 () Top-level entities being moved: index.php, twentytwentyfour, twentytwentythree, twentytwentytwo, wp-devs
+0026.219 () Cleaning up rubbish...
+0026.226 () Entity: uploads
+0026.226 () restore_backup(backup_file=backup_2024-11-06-0917_Test_Site_cb17736087e3-uploads.zip, type=uploads, info=a:2:{s:4:"path";s:48:"C:\wamp64\www\wp_custom_theme/wp-content/uploads";s:11:"description";s:7:"Uploads";}, last_one=)
+0026.227 () Unpacking backup... (backup_2024-11-06-0917_Test_Site_cb17736087e3-uploads.zip, 4.5 MB)
+0026.230 () Unzipping backup_2024-11-06-0917_Test_Site_cb17736087e3-uploads.zip to C:/wamp64/www/wp_custom_theme/wp-content/upgrade/4c722936/ using UpdraftPlus_ZipArchive, starting index 0
+0026.452 () Unzip progress: 51 out of 51 files (4.5 MB, uploads/2024/11/pawelzmarlak-2024-11-01T10_04_29.734Z.png)
+0026.459 () Moving old data: filesystem method / updraft_dir is potentially possible
+0026.461 () Moving old data: can potentially use wp_filesystem method / -old
+0026.461 () Moving old data out of the way...
+0026.502 () Moving unpacked backup into place...
+0026.542 () Cleaning up rubbish...
+0026.549 () Entity: others
+0026.550 () restore_backup(backup_file=backup_2024-11-06-0917_Test_Site_cb17736087e3-others.zip, type=others, info=a:2:{s:4:"path";s:40:"C:\wamp64\www\wp_custom_theme/wp-content";s:11:"description";s:6:"Others";}, last_one=1)
+0026.551 () Unpacking backup... (backup_2024-11-06-0917_Test_Site_cb17736087e3-others.zip, 0 MB)
+0026.553 () Unzipping backup_2024-11-06-0917_Test_Site_cb17736087e3-others.zip to C:/wamp64/www/wp_custom_theme/wp-content/upgrade/50925217/ using UpdraftPlus_ZipArchive, starting index 0
+0026.615 () Unzip progress: 1 out of 1 files (28 B, index.php)
+0026.623 () Cleaning up rubbish...
+0029.013 () Restore successful!
+0029.014 () Restore successful

@@ -1,0 +1,82 @@
+0000.042 (R) [notice] Looking for db archive: file name: backup_2024-11-06-0917_Test_Site_cb17736087e3-db.gz
+0000.044 (R) [notice] Archive is expected to be size: 222.7 KB: OK
+0000.054 (R) [notice] Looking for plugins archive: file name: backup_2024-11-06-0917_Test_Site_cb17736087e3-plugins.zip
+0000.056 (R) [notice] Archive is expected to be size: 7530.4 KB: OK
+0000.063 (R) [notice] Looking for themes archive: file name: backup_2024-11-06-0917_Test_Site_cb17736087e3-themes.zip
+0000.065 (R) [notice] Archive is expected to be size: 11082.7 KB: OK
+0000.071 (R) [notice] Looking for uploads archive: file name: backup_2024-11-06-0917_Test_Site_cb17736087e3-uploads.zip
+0000.072 (R) [notice] Archive is expected to be size: 4598.4 KB: OK
+0000.079 (R) [notice] Looking for others archive: file name: backup_2024-11-06-0917_Test_Site_cb17736087e3-others.zip
+0000.081 (R) [notice] Archive is expected to be size: 0.1 KB: OK
+0000.086 (R) [notice] Will not delete any archives after unpacking them, because there was no cloud storage for this backup
+0000.091 (R) [notice] Unpacking backup... (backup_2024-11-06-0917_Test_Site_cb17736087e3-db.gz, 0.2 Mb)
+0000.099 (R) [notice] Restoring the database (on a large site this can take a long time - if it times out (which can happen if your web hosting company has configured your hosting to limit resources) then you should use a different method, such as phpMyAdmin)...
+0000.206 (R) [notice] Enabling Maintenance mode&#8230;
+0000.278 (R) [notice] Backup of: http://localhost/wp_custom_theme
+0000.280 (R) [notice] Content URL: http://localhost/wp_custom_theme/wp-content
+0000.280 (R) [notice] Uploads URL: http://localhost/wp_custom_theme/wp-content/uploads
+0000.281 (R) [notice] Old table prefix: wp_
+0000.281 (R) [notice] UpdraftPlus plugin slug: updraftplus/updraftplus.php
+0000.281 (R) [notice] Site information: multisite = 0
+0000.281 (R) [notice] Site information: sql_mode = 
+0000.286 (R) [notice] New table prefix: vn_
+0000.293 (R) [notice] Processing table (MyISAM):  wp_options - will restore as: vn_options
+0000.385 (R) [notice] Atomic restore: dropping original table (wp_options)
+0000.395 (R) [notice] Atomic restore: renaming new table (vn_options) to final table name (wp_options)
+0000.432 (R) [notice] Processing table (MyISAM):  wp_users - will restore as: vn_users
+0000.454 (R) [notice] Atomic restore: dropping original table (wp_users)
+0000.463 (R) [notice] Atomic restore: renaming new table (vn_users) to final table name (wp_users)
+0000.476 (R) [notice] Processing table (MyISAM):  wp_usermeta - will restore as: vn_usermeta
+0000.501 (R) [notice] Atomic restore: dropping original table (wp_usermeta)
+0000.510 (R) [notice] Atomic restore: renaming new table (vn_usermeta) to final table name (wp_usermeta)
+0000.522 (R) [notice] Processing table (MyISAM):  wp_commentmeta - will restore as: vn_commentmeta
+0000.545 (R) [notice] Atomic restore: dropping original table (wp_commentmeta)
+0000.553 (R) [notice] Atomic restore: renaming new table (vn_commentmeta) to final table name (wp_commentmeta)
+0000.565 (R) [notice] Processing table (MyISAM):  wp_comments - will restore as: vn_comments
+0000.595 (R) [notice] Atomic restore: dropping original table (wp_comments)
+0000.618 (R) [notice] Atomic restore: renaming new table (vn_comments) to final table name (wp_comments)
+0000.635 (R) [notice] Processing table (MyISAM):  wp_links - will restore as: vn_links
+0000.667 (R) [notice] Atomic restore: dropping original table (wp_links)
+0000.681 (R) [notice] Atomic restore: renaming new table (vn_links) to final table name (wp_links)
+0000.702 (R) [notice] Processing table (MyISAM):  wp_postmeta - will restore as: vn_postmeta
+0000.743 (R) [notice] Atomic restore: dropping original table (wp_postmeta)
+0000.761 (R) [notice] Atomic restore: renaming new table (vn_postmeta) to final table name (wp_postmeta)
+0000.776 (R) [notice] Processing table (MyISAM):  wp_posts - will restore as: vn_posts
+0000.832 (R) [notice] Atomic restore: dropping original table (wp_posts)
+0000.848 (R) [notice] Atomic restore: renaming new table (vn_posts) to final table name (wp_posts)
+0000.868 (R) [notice] Processing table (MyISAM):  wp_term_relationships - will restore as: vn_term_relationships
+0000.900 (R) [notice] Atomic restore: dropping original table (wp_term_relationships)
+0000.910 (R) [notice] Atomic restore: renaming new table (vn_term_relationships) to final table name (wp_term_relationships)
+0000.923 (R) [notice] Processing table (MyISAM):  wp_term_taxonomy - will restore as: vn_term_taxonomy
+0000.956 (R) [notice] Atomic restore: dropping original table (wp_term_taxonomy)
+0000.970 (R) [notice] Atomic restore: renaming new table (vn_term_taxonomy) to final table name (wp_term_taxonomy)
+0000.984 (R) [notice] Processing table (MyISAM):  wp_termmeta - will restore as: vn_termmeta
+0001.012 (R) [notice] Atomic restore: dropping original table (wp_termmeta)
+0001.023 (R) [notice] Atomic restore: renaming new table (vn_termmeta) to final table name (wp_termmeta)
+0001.042 (R) [notice] Processing table (MyISAM):  wp_terms - will restore as: vn_terms
+0001.132 (R) [notice] Disabling Maintenance mode&#8230;
+0001.133 (R) [notice] Atomic restore: dropping original table (wp_terms)
+0001.148 (R) [notice] Atomic restore: renaming new table (vn_terms) to final table name (wp_terms)
+0001.162 (R) [notice] Finished: lines processed: 44 in 1.03 seconds
+0001.164 (R) [notice] Cleaning up rubbish...
+0001.167 (R) [notice] This option was not selected.
+0001.199 (R) [notice] Unpacking backup... (backup_2024-11-06-0917_Test_Site_cb17736087e3-plugins.zip, 7.4 MB)
+0004.532 (R) [notice] Unzip progress: 1002 out of 1535 files (21.9 MB, plugins/updraftplus/vendor/guzzle/guzzle/src/Guzzle/Service/AbstractConfigLoader.php)
+0016.161 (R) [notice] Unzip progress: 1535 out of 1535 files (25.3 MB, plugins/updraftplus/vendor/team-updraft/common-libs/src/updraft-tasks/class-updraft-tasks-activation.php)
+0016.169 (R) [notice] Moving old data out of the way...
+0018.712 (R) [notice] Moving unpacked backup into place...
+0023.898 (R) [notice] Cleaning up rubbish...
+0023.908 (R) [notice] Unpacking backup... (backup_2024-11-06-0917_Test_Site_cb17736087e3-themes.zip, 10.8 MB)
+0025.668 (R) [notice] Unzip progress: 343 out of 343 files (12.1 MB, themes/wp-devs/style.css)
+0025.677 (R) [notice] Moving old data out of the way...
+0025.897 (R) [notice] Moving unpacked backup into place...
+0026.219 (R) [notice] Cleaning up rubbish...
+0026.227 (R) [notice] Unpacking backup... (backup_2024-11-06-0917_Test_Site_cb17736087e3-uploads.zip, 4.5 MB)
+0026.451 (R) [notice] Unzip progress: 51 out of 51 files (4.5 MB, uploads/2024/11/pawelzmarlak-2024-11-01T10_04_29.734Z.png)
+0026.461 (R) [notice] Moving old data out of the way...
+0026.502 (R) [notice] Moving unpacked backup into place...
+0026.542 (R) [notice] Cleaning up rubbish...
+0026.551 (R) [notice] Unpacking backup... (backup_2024-11-06-0917_Test_Site_cb17736087e3-others.zip, 0 MB)
+0026.615 (R) [notice] Unzip progress: 1 out of 1 files (28 B, index.php)
+0026.623 (R) [notice] Cleaning up rubbish...
+0029.013 (R) [notice] Restore successful!
