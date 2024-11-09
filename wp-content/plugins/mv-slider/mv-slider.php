@@ -15,6 +15,9 @@ class MV_Slider{
 
         require_once(MV_SLIDER_PATH . 'post-types/class.mv-slider-cpt.php');
         $MV_Slider_Post_Type = new MV_Slider_Post_Type();
+
+        require_once(MV_SLIDER_PATH . 'MV_Slider_Settings.php');
+        $mv_slider_settings = new MV_Slider_Settings();
     }
 
     public function define_constants(): void
@@ -41,12 +44,29 @@ class MV_Slider{
             'MV Slider',
             'manage_options',
             'mv-slider',
-            array($this, 'mv_slider_settings_page')
+            array($this, 'mv_slider_settings_page'),
+            'dashicons-images-alt2',
+        );
+        add_submenu_page(
+            'mv-slider',
+            'Manage Slides',
+            'Manage Slides',
+            'manage_options',
+            'edit.php?post_type=mv-slider',
+            null, null
+        );
+        add_submenu_page(
+            'mv-slider',
+            'Add New Slides',
+            'Add New Slides',
+            'manage_options',
+            'post-new.php?post_type=mv-slider',
+            null, null
         );
     }
 
-    public function mv_slider_settings_page0(){
-        echo "This is a test page";
+    public function mv_slider_settings_page(){
+        require MV_SLIDER_PATH . 'views/settings-page.php';
     }
 }
 
