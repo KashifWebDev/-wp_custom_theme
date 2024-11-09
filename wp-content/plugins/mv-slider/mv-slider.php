@@ -11,6 +11,8 @@ class MV_Slider{
     public function __construct(){
         $this->define_constants();
 
+        add_action('admin_menu', array($this, 'add_menu'));
+
         require_once(MV_SLIDER_PATH . 'post-types/class.mv-slider-cpt.php');
         $MV_Slider_Post_Type = new MV_Slider_Post_Type();
     }
@@ -31,6 +33,20 @@ class MV_Slider{
     }
     public static function uninstall(){
 
+    }
+
+    public function add_menu(){
+        add_menu_page(
+            'MV Slider Options',
+            'MV Slider',
+            'manage_options',
+            'mv-slider',
+            array($this, 'mv_slider_settings_page')
+        );
+    }
+
+    public function mv_slider_settings_page0(){
+        echo "This is a test page";
     }
 }
 
