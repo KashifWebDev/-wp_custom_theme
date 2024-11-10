@@ -18,6 +18,19 @@ class MV_Slider{
 
         require_once(MV_SLIDER_PATH . 'MV_Slider_Settings.php');
         $mv_slider_settings = new MV_Slider_Settings();
+
+        require_once(MV_SLIDER_PATH . 'shortcode/class.mv-slider-shortcode.php');
+        $mv_slider_settings = new MV_Slider_Shortcode();
+
+        add_action('wp_enqueue_scripts', array($this, 'register_scripts'), 999);
+    }
+
+    public function register_scripts(){
+        wp_register_script('mv-slider-name-jq', MV_SLIDER_URL.'vendor/flexslider/jquery.flexslider.js',
+            array('jquery'), MV_SLIDER_VERSION, true );
+        wp_register_script('mv-slider-options-jq', MV_SLIDER_URL.'vendor/flexslider/flexslider.js',
+            array('jquery'), MV_SLIDER_VERSION, true );
+        wp_register_style('mv-slider-main-css', MV_SLIDER_URL.'vendor/flexslider/flexslider.css', array(), MV_SLIDER_VERSION, 'all');
     }
 
     public function define_constants(): void
